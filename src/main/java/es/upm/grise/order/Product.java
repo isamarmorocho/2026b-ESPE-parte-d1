@@ -1,13 +1,10 @@
 package es.upm.grise.order;
 
 public class Product {
-	
-	long id;
+    
+    long id;
 
-	public long getId() {
-		
-		return id;
-		
-	}
-
+    public long getId() {
+        return id;
+    }
 }
