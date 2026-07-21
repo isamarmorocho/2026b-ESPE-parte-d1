@@ -1,0 +1,49 @@
+=== COMIENZO DE LA CONVERSACIÓN CON EL LLM ===
+
+Usuario: [Envía las clases base del proyecto de pedidos: Order.java, Item.java, Product.java, Status.java, Invoice.java, Invoices.java y las excepciones correspondientes para desarrollar la práctica de pruebas unitarias con JUnit].
+
+Asistente: [Ayuda a estructurar la clase de pruebas unitarias OrderTest.java cubriendo los casos principales de añadir ítems, verificar excepciones, comprobar el cambio de estados, etc., y guía en los pasos para configurar el repositorio de Git].
+
+Usuario: package es.upm.grise.order;
+
+public class Product {
+    
+    long id;
+
+    public long getId() {
+        
+        return id;
+        
+    }
+
+}
+
+Asistente: Confirma la estructura del Product.java para asegurar que el método getId() funcione correctamente con las pruebas unitarias y recuerda los pasos para hacer git push y abrir el Pull Request en GitHub.
+
+Usuario: package es.upm.grise.order;
+
+public enum Status {
+    UNCONFIRMED,
+    PLACED
+}
+
+Asistente: Valida el enum Status y recuerda que ya se cuenta con todo lo necesario para correr las pruebas con 'mvn test' y subir las evidencias.
+
+Usuario: package es.upm.grise.order;
+
+import org.junit.jupiter.api.Test;
+
+class CruiseControlTest {
+
+    @Test
+    public void smokeTest() {}
+    
+}
+
+Asistente: Sugiere renombrar la clase de prueba a OrderTest.java e integra el bloque completo de pruebas unitarias JUnit para evaluar la lógica del carrito de pedidos y excepciones.
+
+Usuario: [Consulta dudas sobre el proceso paso a paso de Git y cómo estructurar el archivo de texto de evidencia de la conversación].
+
+Asistente: Explica paso a paso cómo crear el archivo conv_prueba.txt en el entorno de desarrollo (Visual Studio Code), qué comandos de Git utilizar (git add, git commit, git push) y cómo finalizar la entrega creando el Pull Request en GitHub incluyendo el nombre completo (Joselyn Isamar Morocho Quishpe).
+
+=== FIN DE LA CONVERSACIÓN ===
